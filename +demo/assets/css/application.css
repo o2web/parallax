@@ -261,41 +261,6 @@ code {
       color: #00ffe0; }
       .message.color.turquoise em {
         color: #00ffe0; }
-  .message.sticky {
-    height: 600px;
-    position: relative; }
-    .message.sticky nav {
-      position: relative;
-      background: white;
-      border: 1px solid #125eff;
-      color: #125eff;
-      padding: 25px;
-      width: 100%;
-      max-width: 860px;
-      margin: 0 auto; }
-      .message.sticky nav.sticked {
-        position: fixed;
-        top: 50px;
-        color: #00ffe0; }
-      .message.sticky nav.contained {
-        position: absolute;
-        bottom: 50px;
-        top: auto;
-        color: #125eff; }
-  .message.inverted nav {
-    position: relative;
-    background: white;
-    color: #125eff;
-    padding: 25px;
-    width: 100%;
-    max-width: 860px;
-    margin: 0 auto; }
-    .message.inverted nav.fixed {
-      position: fixed;
-      top: 0; }
-      .message.inverted nav.fixed.bottom {
-        top: auto;
-        bottom: 0; }
 
 .overlay {
   position: absolute;
@@ -313,127 +278,6 @@ code {
     -o-transition: width 300ms ease-out;
     transition: width 300ms ease-out; }
 
-.demo-5 {
-  height: 3500px; }
-  .demo-5 .dino {
-    position: fixed;
-    width: 250px;
-    height: 150px;
-    top: 55%;
-    left: -50%;
-    background: url(../img/dino-cycle.png) no-repeat left 0; }
-
-button {
-  display: inline-block;
-  margin: 0 -125px;
-  width: 200px;
-  text-align: center;
-  font-size: 24px;
-  text-decoration: none;
-  color: #232323;
-  width: 250px;
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  padding: 3px;
-  text-transform: uppercase;
-  position: relative;
-  border: none;
-  background: #363636;
-  -webkit-perspective: 300px;
-  -moz-perspective: 300px;
-  -ms-perspective: 300px;
-  -o-perspective: 300px;
-  perspective: 300px; }
-  button:hover {
-    color: #d5d5d5; }
-  button:focus {
-    border: none;
-    background: #363636; }
-  button.sticked {
-    position: fixed; }
-  button.contained {
-    position: absolute;
-    top: auto;
-    bottom: 50px; }
-  button span {
-    display: block;
-    padding: 20px;
-    line-height: 40px;
-    background: #00ffe0;
-    -webkit-transition: -webkit-transform 160ms ease-in-out, z-index 0ms linear 80ms;
-    -moz-transition: -moz-transform 160ms ease-in-out, z-index 0ms linear 80ms;
-    -ms-transition: -ms-transform 160ms ease-in-out, z-index 0ms linear 80ms;
-    -o-transition: -o-transform 160ms ease-in-out, z-index 0ms linear 80ms;
-    transition: transform 160ms ease-in-out, z-index 0ms linear 80ms;
-    -webkit-transform-origin: 50% 50% -40px;
-    -moz-transform-origin: 50% 50% -40px;
-    -ms-transform-origin: 50% 50% -40px;
-    -o-transform-origin: 50% 50% -40px;
-    transform-origin: 50% 50% -40px;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden; }
-    button span:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      -webkit-transition: background 120ms linear;
-      -moz-transition: background 120ms linear;
-      -ms-transition: background 120ms linear;
-      -o-transition: background 120ms linear;
-      transition: background 120ms linear; }
-    button span.idle {
-      position: relative;
-      z-index: 1;
-      background: #125eff;
-      color: white;
-      -webkit-transform: rotateX(0deg);
-      -moz-transform: rotateX(0deg);
-      -ms-transform: rotateX(0deg);
-      -o-transform: rotateX(0deg);
-      transform: rotateX(0deg); }
-      button span.idle:after {
-        background: rgba(255, 255, 255, 0); }
-    button span.hover {
-      position: absolute;
-      z-index: 0;
-      top: 3px;
-      bottom: 3px;
-      left: 3px;
-      right: 3px;
-      -webkit-transform: rotateX(-90deg);
-      -moz-transform: rotateX(-90deg);
-      -ms-transform: rotateX(-90deg);
-      -o-transform: rotateX(-90deg);
-      transform: rotateX(-90deg); }
-      button span.hover:after {
-        background: rgba(0, 0, 0, 0.8); }
-  button.active span.idle {
-    z-index: 0;
-    -webkit-transform: rotateX(90deg);
-    -moz-transform: rotateX(90deg);
-    -ms-transform: rotateX(90deg);
-    -o-transform: rotateX(90deg);
-    transform: rotateX(90deg); }
-    button.active span.idle:after {
-      background: rgba(255, 255, 255, 0.8); }
-  button.active span.hover {
-    z-index: 1;
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
-    transform: rotateX(0deg); }
-    button.active span.hover:after {
-      background: transparent; }
-
 .demo-parallax {
   background: white; }
   .demo-parallax .circles {
@@ -443,7 +287,7 @@ button {
     position: relative;
     z-index: 0; }
     .demo-parallax .circles .container {
-      height: 3000px;
+      height: 7500px;
       background: rgba(240, 240, 240, 0.75);
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
@@ -452,7 +296,7 @@ button {
       transform: translate3d(0, 0, 0); }
   .demo-parallax .circle {
     position: absolute;
-    font-size: 50px;
+    font-size: 25px;
     width: 1em;
     height: 1em;
     overflow: hidden;
@@ -470,95 +314,174 @@ button {
       background: #125eff; }
     .demo-parallax .circle.turquoise {
       background: #00ffe0; }
-    .demo-parallax .circle[z="-5"] {
+    .demo-parallax .circle[z="-10"] {
       width: 0em;
       height: 0em;
       margin: -0em;
-      z-index: -5;
+      z-index: -10;
       -webkit-box-shadow: 0 0em 0em rgba(0, 0, 0, 0.2);
       -moz-box-shadow: 0 0em 0em rgba(0, 0, 0, 0.2);
       box-shadow: 0 0em 0em rgba(0, 0, 0, 0.2); }
-    .demo-parallax .circle[z="-4"] {
+    .demo-parallax .circle[z="-9"] {
       width: 0.5em;
       height: 0.5em;
       margin: -0.5em;
-      z-index: -4;
+      z-index: -9;
       -webkit-box-shadow: 0 0.01em 0.0125em rgba(0, 0, 0, 0.1995);
       -moz-box-shadow: 0 0.01em 0.0125em rgba(0, 0, 0, 0.1995);
       box-shadow: 0 0.01em 0.0125em rgba(0, 0, 0, 0.1995); }
-    .demo-parallax .circle[z="-3"] {
+    .demo-parallax .circle[z="-8"] {
       width: 1em;
       height: 1em;
       margin: -1em;
-      z-index: -3;
+      z-index: -8;
       -webkit-box-shadow: 0 0.04em 0.05em rgba(0, 0, 0, 0.198);
       -moz-box-shadow: 0 0.04em 0.05em rgba(0, 0, 0, 0.198);
       box-shadow: 0 0.04em 0.05em rgba(0, 0, 0, 0.198); }
-    .demo-parallax .circle[z="-2"] {
+    .demo-parallax .circle[z="-7"] {
       width: 1.5em;
       height: 1.5em;
       margin: -1.5em;
-      z-index: -2;
+      z-index: -7;
       -webkit-box-shadow: 0 0.09em 0.1125em rgba(0, 0, 0, 0.1955);
       -moz-box-shadow: 0 0.09em 0.1125em rgba(0, 0, 0, 0.1955);
       box-shadow: 0 0.09em 0.1125em rgba(0, 0, 0, 0.1955); }
-    .demo-parallax .circle[z="-1"] {
+    .demo-parallax .circle[z="-6"] {
       width: 2em;
       height: 2em;
       margin: -2em;
-      z-index: -1;
+      z-index: -6;
       -webkit-box-shadow: 0 0.16em 0.2em rgba(0, 0, 0, 0.192);
       -moz-box-shadow: 0 0.16em 0.2em rgba(0, 0, 0, 0.192);
       box-shadow: 0 0.16em 0.2em rgba(0, 0, 0, 0.192); }
-    .demo-parallax .circle[z="0"] {
+    .demo-parallax .circle[z="-5"] {
       width: 2.5em;
       height: 2.5em;
       margin: -2.5em;
-      z-index: 0;
+      z-index: -5;
       -webkit-box-shadow: 0 0.25em 0.3125em rgba(0, 0, 0, 0.1875);
       -moz-box-shadow: 0 0.25em 0.3125em rgba(0, 0, 0, 0.1875);
-      box-shadow: 0 0.25em 0.3125em rgba(0, 0, 0, 0.1875);
-      z-index: 1; }
-    .demo-parallax .circle[z="1"] {
+      box-shadow: 0 0.25em 0.3125em rgba(0, 0, 0, 0.1875); }
+    .demo-parallax .circle[z="-4"] {
       width: 3em;
       height: 3em;
       margin: -3em;
-      z-index: 1;
+      z-index: -4;
       -webkit-box-shadow: 0 0.36em 0.45em rgba(0, 0, 0, 0.182);
       -moz-box-shadow: 0 0.36em 0.45em rgba(0, 0, 0, 0.182);
       box-shadow: 0 0.36em 0.45em rgba(0, 0, 0, 0.182); }
-    .demo-parallax .circle[z="2"] {
+    .demo-parallax .circle[z="-3"] {
       width: 3.5em;
       height: 3.5em;
       margin: -3.5em;
-      z-index: 2;
+      z-index: -3;
       -webkit-box-shadow: 0 0.49em 0.6125em rgba(0, 0, 0, 0.1755);
       -moz-box-shadow: 0 0.49em 0.6125em rgba(0, 0, 0, 0.1755);
       box-shadow: 0 0.49em 0.6125em rgba(0, 0, 0, 0.1755); }
-    .demo-parallax .circle[z="3"] {
+    .demo-parallax .circle[z="-2"] {
       width: 4em;
       height: 4em;
       margin: -4em;
-      z-index: 3;
+      z-index: -2;
       -webkit-box-shadow: 0 0.64em 0.8em rgba(0, 0, 0, 0.168);
       -moz-box-shadow: 0 0.64em 0.8em rgba(0, 0, 0, 0.168);
       box-shadow: 0 0.64em 0.8em rgba(0, 0, 0, 0.168); }
-    .demo-parallax .circle[z="4"] {
+    .demo-parallax .circle[z="-1"] {
       width: 4.5em;
       height: 4.5em;
       margin: -4.5em;
-      z-index: 4;
+      z-index: -1;
       -webkit-box-shadow: 0 0.81em 1.0125em rgba(0, 0, 0, 0.1595);
       -moz-box-shadow: 0 0.81em 1.0125em rgba(0, 0, 0, 0.1595);
       box-shadow: 0 0.81em 1.0125em rgba(0, 0, 0, 0.1595); }
-    .demo-parallax .circle[z="5"] {
+    .demo-parallax .circle[z="0"] {
       width: 5em;
       height: 5em;
       margin: -5em;
-      z-index: 5;
+      z-index: 0;
       -webkit-box-shadow: 0 1em 1.25em rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 0 1em 1.25em rgba(0, 0, 0, 0.15);
       box-shadow: 0 1em 1.25em rgba(0, 0, 0, 0.15); }
+    .demo-parallax .circle[z="1"] {
+      width: 5.5em;
+      height: 5.5em;
+      margin: -5.5em;
+      z-index: 1;
+      -webkit-box-shadow: 0 1.21em 1.5125em rgba(0, 0, 0, 0.1395);
+      -moz-box-shadow: 0 1.21em 1.5125em rgba(0, 0, 0, 0.1395);
+      box-shadow: 0 1.21em 1.5125em rgba(0, 0, 0, 0.1395); }
+    .demo-parallax .circle[z="2"] {
+      width: 6em;
+      height: 6em;
+      margin: -6em;
+      z-index: 2;
+      -webkit-box-shadow: 0 1.44em 1.8em rgba(0, 0, 0, 0.128);
+      -moz-box-shadow: 0 1.44em 1.8em rgba(0, 0, 0, 0.128);
+      box-shadow: 0 1.44em 1.8em rgba(0, 0, 0, 0.128); }
+    .demo-parallax .circle[z="3"] {
+      width: 6.5em;
+      height: 6.5em;
+      margin: -6.5em;
+      z-index: 3;
+      -webkit-box-shadow: 0 1.69em 2.1125em rgba(0, 0, 0, 0.1155);
+      -moz-box-shadow: 0 1.69em 2.1125em rgba(0, 0, 0, 0.1155);
+      box-shadow: 0 1.69em 2.1125em rgba(0, 0, 0, 0.1155); }
+    .demo-parallax .circle[z="4"] {
+      width: 7em;
+      height: 7em;
+      margin: -7em;
+      z-index: 4;
+      -webkit-box-shadow: 0 1.96em 2.45em rgba(0, 0, 0, 0.102);
+      -moz-box-shadow: 0 1.96em 2.45em rgba(0, 0, 0, 0.102);
+      box-shadow: 0 1.96em 2.45em rgba(0, 0, 0, 0.102); }
+    .demo-parallax .circle[z="5"] {
+      width: 7.5em;
+      height: 7.5em;
+      margin: -7.5em;
+      z-index: 5;
+      -webkit-box-shadow: 0 2.25em 2.8125em rgba(0, 0, 0, 0.0875);
+      -moz-box-shadow: 0 2.25em 2.8125em rgba(0, 0, 0, 0.0875);
+      box-shadow: 0 2.25em 2.8125em rgba(0, 0, 0, 0.0875); }
+    .demo-parallax .circle[z="6"] {
+      width: 8em;
+      height: 8em;
+      margin: -8em;
+      z-index: 6;
+      -webkit-box-shadow: 0 2.56em 3.2em rgba(0, 0, 0, 0.072);
+      -moz-box-shadow: 0 2.56em 3.2em rgba(0, 0, 0, 0.072);
+      box-shadow: 0 2.56em 3.2em rgba(0, 0, 0, 0.072); }
+    .demo-parallax .circle[z="7"] {
+      width: 8.5em;
+      height: 8.5em;
+      margin: -8.5em;
+      z-index: 7;
+      -webkit-box-shadow: 0 2.89em 3.6125em rgba(0, 0, 0, 0.0555);
+      -moz-box-shadow: 0 2.89em 3.6125em rgba(0, 0, 0, 0.0555);
+      box-shadow: 0 2.89em 3.6125em rgba(0, 0, 0, 0.0555); }
+    .demo-parallax .circle[z="8"] {
+      width: 9em;
+      height: 9em;
+      margin: -9em;
+      z-index: 8;
+      -webkit-box-shadow: 0 3.24em 4.05em rgba(0, 0, 0, 0.038);
+      -moz-box-shadow: 0 3.24em 4.05em rgba(0, 0, 0, 0.038);
+      box-shadow: 0 3.24em 4.05em rgba(0, 0, 0, 0.038); }
+    .demo-parallax .circle[z="9"] {
+      width: 9.5em;
+      height: 9.5em;
+      margin: -9.5em;
+      z-index: 9;
+      -webkit-box-shadow: 0 3.61em 4.5125em rgba(0, 0, 0, 0.0195);
+      -moz-box-shadow: 0 3.61em 4.5125em rgba(0, 0, 0, 0.0195);
+      box-shadow: 0 3.61em 4.5125em rgba(0, 0, 0, 0.0195); }
+    .demo-parallax .circle[z="10"] {
+      width: 10em;
+      height: 10em;
+      margin: -10em;
+      z-index: 10;
+      -webkit-box-shadow: 0 4em 5em transparent;
+      -moz-box-shadow: 0 4em 5em transparent;
+      box-shadow: 0 4em 5em transparent; }
 
 input[type="submit"],
 input[type="text"],
