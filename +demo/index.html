@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>scrollEvents.js</title>
+    <link rel="stylesheet" href="assets/css/application.css">
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/o2-raf/raf.min.js"></script>
+    <script src="../bower_components/o2-scrollevents/scrollEvents.min.js"></script>
+    <script src="../sticky.js"></script>
+    <script src="assets/js/demo.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+
+    	<h1>
+    		<span class="blue">scrollEvents.js</span>
+				<div><small>now using requestAnimationFrame</small></div>
+    	</h1>
+	  	<section class="intro dark">
+
+	  		<div class="container">
+	  			<code>
+<span>// UTILISATION</span>
+
+$('.element').sticky(options);
+
+$('.element').sticky(method [, flag], options);
+					</code>
+
+	  		</div>
+
+	  	</section>
+
+	  	<section class="demo-1">
+	  		<h2>1</h2>
+	  		<div class="message sticky container">
+	  			<nav>
+	  				Sticky
+	  			</nav>
+	  		</div>
+	  		<div class="overlay delta"></div>
+
+		  	<div class="container">
+		  		<code class="eval">
+$('.demo-1 nav').sticky({
+	offset: 50,
+	offsetBottom: 50,
+	container: $('.demo-1 .sticky.container'),
+	fixed: function(e){
+		e.selection.removeClass('contained').addClass('sticked').html('Sticked');
+	},
+	contained: function(e){
+		e.selection.removeClass('sticked').addClass('contained').html('Contained');
+	},
+	reset: function(e){
+		e.selection.removeClass('sticked contained').html('Sticky');
+	}
+});
+				</code>
+	  		</div>
+		</section>
+
+		<section class="enjoy dark">
+	  		<div class="message container">
+	  			Enjoy
+	  		</div>
+		</section>
+
+	 </div>
+  </body>
+</html>
