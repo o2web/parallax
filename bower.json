@@ -1,6 +1,6 @@
 {
   "name": "parallax",
-  "main": "parallax.min.js",
+  "main": "parallax.js",
   "version": "1.0.0",
   "authors": [
     "Charles Thibault <cthibault@o2web.ca>"
