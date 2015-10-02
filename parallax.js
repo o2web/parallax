@@ -6,10 +6,24 @@
 // All rights reserved
 // 2015
 
+//
+// DEFINE MODULE
+(function (root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    // Define AMD module
+    define(['jquery', 'raf', 'scrollEvents'], factory);
+  } else {
+    // JQUERY INIT
+    factory(jQuery);
+  }
+}
 
+//
+//
+// MAIN CODE
+(this, function($){
 
-(function($){
-	$win = $(window);
+  $win = $(window);
 
   // global variable for parallax.js
   window.parallax = {};
@@ -52,6 +66,4 @@
     })
   }
 
-
-
-})(jQuery);
+}));
