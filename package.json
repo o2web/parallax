@@ -1,0 +1,33 @@
+{
+  "name": "o2-parallax",
+  "version": "1.1.0",
+  "description": "Parallax.js uses O2's scrollEvents to move elements based on their [z] attribute.",
+  "keywords": [
+    "o2web",
+    "parallax",
+    "events",
+    "scroll",
+    "javascript",
+    "translate",
+    "transform3d"
+  ],
+  "homepage": "http://o2web.ca",
+  "bugs": {
+    "url": "https://github.com/o2web/parallax/issues"
+  },
+  "license": "GPL-2.0",
+  "author": "Charles Thibault <cthibault@o2web.ca>",
+  "files": [
+    "parallax.min.js"
+  ],
+  "main": "parallax.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/o2web/parallax.git"
+  },
+  "dependencies": {
+    "jquery": ">=1.11",
+    "o2-raf": "~1",
+    "o2-scrollevents": "~1"
+  }
+}
